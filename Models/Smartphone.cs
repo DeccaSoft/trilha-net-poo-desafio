@@ -35,19 +35,19 @@ namespace DesafioPOO.Models
 
         public void ReceberLigacao()
         {
-            Console.WriteLine("Recebendo ligação...");
+            Console.WriteLine($"Recebendo ligação no {this.Marca} {this.Modelo}...");
         }
 
         public void FazerLigacao()
         {
-            Console.WriteLine("Fazendo ligação...");
+            Console.WriteLine($"Fazendo ligação do {this.Marca} {this.Modelo}...");
         }
 
         public abstract void InstalarAplicativo(string nomeApp);
 
         public void ExecutarAplicativo(string nomeApp)
         {
-            Console.WriteLine($"Executando {nomeApp}...");
+            Console.WriteLine($"Executando {nomeApp} no {this.SO}...");
         }
     }
 }
